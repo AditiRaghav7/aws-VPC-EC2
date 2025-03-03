@@ -42,7 +42,7 @@ resource "aws_subnet" "public-subnet" {
 resource "aws_internet_gateway" "my-igw-tf" {
   vpc_id = aws_vpc.terraform_VPC.id
   tags = {
-    Name = "my-igw-tf"
+    Name = "my-igw-terraform"
   }
 }
 
@@ -56,7 +56,7 @@ resource "aws_route_table" "my-rt" {
   }
 
   tags = {
-    Name = "my-rt"
+    Name = "my-route-table-ec2"
   }
 }
 
